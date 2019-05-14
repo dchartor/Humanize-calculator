@@ -20,5 +20,4 @@ def test_converted_number():
 def test_invalid_input():
     assert converter('5 % 5') == 'Invalid input'
     assert converter('') == 'Invalid input'
-
-
+    assert converter('5.0 + 5.0 = 10.0') == 'Invalid input'
